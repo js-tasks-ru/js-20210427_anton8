@@ -6,7 +6,7 @@
  */
 export function trimSymbols(string, size) {
   let result = '';
-  let currentSymbol = string[0];
+  let [currentSymbol] = string;
   let currentSubstring = '';
 
   for (let symbol of string) {
